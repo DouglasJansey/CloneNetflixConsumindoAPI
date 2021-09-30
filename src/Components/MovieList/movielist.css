@@ -1,0 +1,58 @@
+.movieListArea{
+    margin-bottom: 10px;
+}
+.movieListArea h2 {
+    margin-left: 30px;
+}
+.listArea{
+    overflow-x: hidden;
+    padding-left: 30px;
+
+}
+.movieItem{
+    display: inline-block;
+    width: 150px;
+}
+.movieList{
+    transition: all ease 0.5s;
+    margin-top: 5px;
+}
+.movieItem img {
+    display: inline-block;
+    width: 100%;
+    transform: scale(0.9);
+    transition: all ease 0.2s;
+}
+.movieItem img:hover {
+    transform: scale(1);
+    cursor: pointer;
+}
+.movieListArea:hover .ArrowLeft,
+.movieListArea:hover .ArrowRight{
+    opacity: 1;
+    transition: all ease 0.3s;
+}
+.ArrowLeft, .ArrowRight{
+    position: absolute;
+    width: 30px;
+    height: 230px;
+    background-color: rgba(20, 20, 20, 0.6);
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0;
+}
+.ArrowLeft{
+    left: 0;
+}
+.ArrowRight{
+    right: 0;
+}
+@media (max-width: 760px){
+    .ArrowLeft, .ArrowRight{
+        opacity: 1;
+    }
+}
